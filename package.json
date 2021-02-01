@@ -1,0 +1,21 @@
+{
+  "name": "datav-libs",
+  "version": "1.0.0",
+  "description": "datav components library",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "rollup -c rollup.config.dev.js"
+  },
+  "author": "niu",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
+    "rollup": "^2.38.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "sam-test-data": "^0.0.5"
+  }
+}

@@ -1,7 +1,7 @@
 <template>
     <div class="test">
         <div>
-            hello
+            test c
         </div>
         <div>
             message: {{ message }}
@@ -16,7 +16,7 @@
 import {computed, ref} from 'vue'
 
 export default {
-    name: 'TestComponent',
+    name: 'TestComponentC',
     setup() {
         const message = 'hello world'
 
@@ -38,6 +38,6 @@ export default {
 
 <style lang="scss" scoped>
     .test {
-        color: red;
+        color: blue;
     }
 </style>

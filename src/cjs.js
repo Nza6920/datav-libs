@@ -1,3 +1,4 @@
+// demo
 // common js 语法
 // 逐步导出 触发 tree shaking
 exports.a = 1

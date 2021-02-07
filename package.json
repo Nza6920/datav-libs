@@ -1,8 +1,8 @@
 {
-  "name": "imooc-datav-libs-dev",
+  "name": "niu-datav-libs-dev",
   "version": "1.0.0",
-  "description": "imooc datav components library",
-  "main": "dist/imooc.datav.js",
+  "description": "niu datav components library",
+  "main": "dist/niu.datav.js",
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
     "build": "eslint ./src && rollup -c rollup.config.dev.js",
@@ -15,10 +15,10 @@
   ],
   "keywords": [
     "vue",
-    "imooc",
+    "niu",
     "datav"
   ],
-  "author": "sam <247765564@qq.com>",
+  "author": "niu <2388426660@qq.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.2",

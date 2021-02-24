@@ -1,43 +1,43 @@
 <template>
-    <div class="test">
-        <div>
-            test c
-        </div>
-        <div>
-            message: {{ message }}
-        </div>
-        <div>
-            double: {{ doubleCount }}
-        </div>
-        <button @click="add">add count</button>
+  <div class="test">
+    <div>
+      test c
     </div>
+    <div>
+      message: {{ message }}
+    </div>
+    <div>
+      double: {{ doubleCount }}
+    </div>
+    <button @click="add">add count</button>
+  </div>
 </template>
 <script>
 import {computed, ref} from 'vue'
 
 export default {
-    name: 'TestComponentC',
-    setup() {
-        const message = 'hello world'
+  name: 'TestComponentC',
+  setup() {
+    const message = 'hello world'
 
-        // 将他变为响应式对象
-        const count = ref(1)
-        // 计算属性
-        const doubleCount = computed(() => count.value * 2)
-        const add = () => {
-            count.value ++
-        }
-        return {
-            message,
-            doubleCount,
-            add
-        }
+    // 将他变为响应式对象
+    const count = ref(1)
+    // 计算属性
+    const doubleCount = computed(() => count.value * 2)
+    const add = () => {
+      count.value++
     }
+    return {
+      message,
+      doubleCount,
+      add
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-    .test {
-        color: blue;
-    }
+.test {
+  color: blue;
+}
 </style>

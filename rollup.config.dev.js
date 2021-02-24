@@ -27,10 +27,8 @@ module.exports = {
         }
     }],
     plugins: [
-        // 负责将外部引用模块一起打包
-        resolve(),
-        // 支持 commonjs 语法
-        commonjs(),
+        // 支持 vue 语法
+        vue(),
         // 支持 es6 语法
         babel({
             exclude: 'node_modules/**',
@@ -41,10 +39,12 @@ module.exports = {
                 }]
             ]
         }),
+        // 负责将外部引用模块一起打包
+        resolve(),
+        // 支持 commonjs 语法
+        commonjs(),
         // 支持json
         json(),
-        // 支持 vue 语法
-        vue(),
         // 支持 scss 语法
         postcss({
             plugins: []

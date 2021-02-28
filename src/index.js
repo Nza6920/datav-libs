@@ -1,7 +1,8 @@
 import TestA from './components/Test-a/index'
 import TestB from './components/Test-b/index'
 import TestC from './components/Test-c/index'
-import Icon from './components/icon/index'
+import Icon from './components/Icon/index'
+import SvgAnimation from './components/SvgAnimation/index'
 
 export default function (Vue) {
     // 嵌套使用
@@ -9,4 +10,5 @@ export default function (Vue) {
     Vue.use(TestB)
     Vue.use(TestC)
     Vue.use(Icon)
+    Vue.use(SvgAnimation)
 }

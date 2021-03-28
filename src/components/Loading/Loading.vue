@@ -87,6 +87,11 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-
+<style lang="scss" scoped>
+.my-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 </style>

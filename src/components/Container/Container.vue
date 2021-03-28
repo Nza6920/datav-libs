@@ -76,7 +76,7 @@ export default {
 
       const widthScale = curWidth / realWidth
       const heightScale = curHeight / realHeight
-      dom.style.transform = `scale(${widthScale}, ${heightScale})`
+      dom && (dom.style.transform = `scale(${widthScale}, ${heightScale}))`)
     }
 
     // 初始化 MutationObserver
